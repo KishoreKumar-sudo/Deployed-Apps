@@ -1,13 +1,15 @@
 import React from "react";
-const Navbar =()=>{
+import { Link } from 'react-router-dom'
+const Navbar = () => {
     return <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
-        <a className="navbar-brand" href="/home">Hospital Admin Management System</a>
+        <Link to="/" className="navbar-brand" >Hospital Admin Management System</Link>
         <div className="ml-auto">
             <ul className="navbar-nav">
-                <li className="nav-list"><a className="nav-link" href="/admin">Admin</a></li> 
-                <li className="nav-list"><a className="nav-link" href="/doctor">Doctor</a></li>
-                <li className="nav-list"><a className="nav-link" href="/medical">Medical</a></li>
-                <li className="nav-list"><a className="nav-link" href="/reception">Reception</a></li>
+                <li className="nav-list"><Link className="nav-link" to="/home">Home</Link></li>
+                <li className="nav-list"><Link className="nav-link" to="/admin">Admin</Link></li>
+                <li className="nav-list"><Link className="nav-link" to="/doctor">Doctor</Link></li>
+                <li className="nav-list"><Link className="nav-link" to="/medical">Medical</Link></li>
+                <li className="nav-list"><Link className="nav-link" to="/reception">Reception</Link></li>
             </ul>
         </div>
     </nav>
