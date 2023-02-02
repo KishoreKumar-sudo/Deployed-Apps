@@ -1,11 +1,11 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './Components/Navbar/Navbar'
-import Admin from './Components/Admin'
-import Doctor from './Components/Doctor'
-import Medical from './Components/Medical'
-import Reception from './Components/Reception'
 import Home from './Components/Home/Home'
+import Admin from './Components/Administration/Admin'
+import Doctor from './Components/Doctor/Doctor'
+import Pharmacist from './Components/Pharmacy/Pharmacist'
+import Reception from './Components/Reception/Reception'
 const App = () => {
   return (
     <Router>
@@ -13,14 +13,11 @@ const App = () => {
       <Routes>
       <Route path="/home" element = {<Home/>}/>
         <Route path="/admin" element = {<Admin/>}/>
-        <Route path="/admin" element = {<Admin/>}/>
         <Route path="/doctor" element = {<Doctor/>}/>
-        <Route path="/medical" element = {<Medical/>}/>
+        <Route path="/pharmacist" element = {<Pharmacist/>}/>
         <Route path="/reception" element = {<Reception/>}/>
       </Routes>
     </Router>
   )
-
 }
-
 export default App
