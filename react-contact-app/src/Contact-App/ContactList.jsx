@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react'
 const ContactList = (props) => {
-    let [contacts, setContacts] = useState()
-    useEffect(() => {
-        setContacts(props.users.users)
-    },[props])
+const [products, setProducts] = useState({})
+
+useEffect(()=>{
+    setProducts(props.data.users)
+}, [props])
     return <>
         <h1>Contact List</h1>
         <div className="container">
-            <pre>{JSON.stringify(contacts)}</pre>
+            <pre>{JSON.stringify(products)}</pre>
             <div className="row">
                 <div className="col-md">
                     <table className="table table-hover">
@@ -20,20 +21,22 @@ const ContactList = (props) => {
                             </tr>
                         </thead>
                         <tbody>
-                            {
-                                contacts.length > 0 ? <>
-                                    {
-                                        contacts.map((contact) => {
-                                            return <tr>
-                                                <td>{contact.id}</td>
-                                                <td>{contact.firstName}</td>
-                                                <td>{contact.email}</td>
-                                                <td>{contact.phone}</td>
-                                            </tr>
-                                        })
-                                    }
-                                </> : null
-                            }
+{
+    products.length>0?<>
+   {
+     products.map((user)=>{
+        return <tr>
+            <td>{user.id}</td>
+            <td>{user.firstName}</td>
+            <td>{user.email}</td>
+            <td>{user.phone}</td>
+        </tr>
+     })
+   }
+    </>:null
+}
+ 
+
                         </tbody>
                     </table>
                 </div>

@@ -5,28 +5,34 @@ import ContactDetails from './ContactDetails'
 
 const ContactApp = () => {
 
-  let [users, setUsers] = useState([])
+  let [users, setUsers] = useState({})
 
-  useEffect(()=>{
+  useEffect(() => {
     axios.get('https://dummyjson.com/users')
-    .then((response)=>{
-      setUsers(response.data)
-    })
-    .catch(()=>{})
+      .then((response) => {
+        setUsers(response.data)
+      })
+      .catch(() => { })
   })
   return <>
-  <h1>Contact App</h1>
-  <div className="container">
-  <pre>{JSON.stringify(users)}</pre>
-    <div className="row">
+    <h1>Contact App</h1>
+    <div className="container">
+      <pre>{JSON.stringify(users)}</pre>
+      <div className="row">
         <div className="col-md-8">
-            <ContactList users={users} />
+    
+{
+  Object.keys(users).length>0?<>
+              <ContactList data={users} />
+  </>:null
+}
+         
         </div>
         <div className="col-md-4">
-            <ContactDetails />
+          <ContactDetails />
         </div>
+      </div>
     </div>
-  </div>
   </>
 }
 
