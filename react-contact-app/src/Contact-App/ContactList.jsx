@@ -17,7 +17,7 @@ useEffect(()=>{
                                 <th>Id</th>
                                 <th>Name</th>
                                 <th>Email</th>
-                                <th>Mobile Num</th>
+                                <th>Mobile Number</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -35,8 +35,6 @@ useEffect(()=>{
    }
     </>:null
 }
- 
-
                         </tbody>
                     </table>
                 </div>
