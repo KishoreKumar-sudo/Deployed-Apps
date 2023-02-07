@@ -4,7 +4,6 @@ const ContactDetails = (props) => {
 
     let userData = props.userData
 
-
     return <>
     <h1>Contact Details</h1>
   <div className="container">
