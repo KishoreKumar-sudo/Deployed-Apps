@@ -1,14 +1,18 @@
 import React, { useEffect, useState } from 'react'
 const ContactList = (props) => {
-const [products, setProducts] = useState({})
+    const [users, setUsers] = useState({})
 
-useEffect(()=>{
-    setProducts(props.data.users)
-}, [props])
+    useEffect(() => {
+        setUsers(props.data.users)
+    }, [props])
+
+    let selectedUser = (user) => {
+        props.method(user)
+    }
     return <>
         <h1>Contact List</h1>
         <div className="container">
-            <pre>{JSON.stringify(products)}</pre>
+            {/* <pre>{JSON.stringify(users)}</pre> */}
             <div className="row">
                 <div className="col-md">
                     <table className="table table-hover">
@@ -21,20 +25,20 @@ useEffect(()=>{
                             </tr>
                         </thead>
                         <tbody>
-{
-    products.length>0?<>
-   {
-     products.map((user)=>{
-        return <tr>
-            <td>{user.id}</td>
-            <td>{user.firstName}</td>
-            <td>{user.email}</td>
-            <td>{user.phone}</td>
-        </tr>
-     })
-   }
-    </>:null
-}
+                            {
+                                users.length > 0 ? <>
+                                    {
+                                        users.map((user) => {
+                                            return <tr onMouseOver={selectedUser.bind(this, user)}>
+                                                <td>{user.id}</td>
+                                                <td>{user.firstName}</td>
+                                                <td>{user.email}</td>
+                                                <td>{user.phone}</td>
+                                            </tr>
+                                        })
+                                    }
+                                </> : null
+                            }
                         </tbody>
                     </table>
                 </div>
