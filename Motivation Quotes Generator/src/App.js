@@ -5,14 +5,39 @@ import './App.css';
 class App extends Component {
   state = { advice: '' }
 
-  componentDidMount(){
-    console.log('Component Did Mount');
+  componentDidMount() {
+    this.fetchAdvice();
+    // console.log('Component Did Mount');
+  }
+
+  fetchAdvice = () => {
+    axios.get('https://api.adviceslip.com/advice')
+      .then((response) => {
+
+        const { advice } = response.data.slip
+
+        this.setState({ advice })
+
+        console.log(advice)
+      })
+      .catch((error) => {
+        console.log(error)
+      })
   }
 
   render() {
+
+    const { advice } = this.state
+
     return (
-      <h1>App</h1>
-    ) 
+      <div className="app">
+        <div className="card">
+          <h1 className="heading">{advice}</h1>
+        </div>
+      </div>
+
+
+    )
   }
 }
 
