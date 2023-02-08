@@ -33,6 +33,9 @@ class App extends Component {
       <div className="app">
         <div className="card">
           <h1 className="heading">{advice}</h1>
+          <button className="button">
+            <span>GIVE ME A ADVICE..!</span>
+          </button>
         </div>
       </div>
 
