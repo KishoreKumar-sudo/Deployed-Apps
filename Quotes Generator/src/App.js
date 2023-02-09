@@ -33,8 +33,6 @@ const App = () => {
             <h3 className="heading">{advice[randomNumber].author}</h3>
           </> : null
         }
-
-
         <button className="button" onClick={fetchAdvice}>
           <span>GIVE ME ADVICE..!</span>
         </button>
