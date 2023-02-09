@@ -15,10 +15,13 @@ html {
 
 .app {
   background: url('./Images/NightCityView.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .card {

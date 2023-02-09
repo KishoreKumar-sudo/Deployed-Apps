@@ -1,45 +1,45 @@
-import React, { Component } from 'react'
-import axios from 'axios'
-import './App.css';
+// import React, { Component } from 'react'
+// import axios from 'axios'
+// import './App.css';
 
-class App extends Component {
-  state = { advice: '' }
+// class App extends Component {
+//   state = { advice: '' }
 
-  componentDidMount() {
-    this.fetchAdvice();
-    // console.log('Component Did Mount');
-  }
+//   componentDidMount() {
+//     this.fetchAdvice();
+//     // console.log('Component Did Mount');
+//   }
 
-  fetchAdvice = () => {
-    axios.get('https://api.adviceslip.com/advice')
-      .then((response) => {
+//   fetchAdvice = () => {
+//     axios.get('https://api.adviceslip.com/advice')
+//       .then((response) => {
 
-        this.setState({ advice:response.data.slip.advice })
+//         this.setState({ advice:response.data.slip.advice })
 
-        // console.log(advice)
-      })
-      .catch((error) => {
-        console.log(error)
-      })
-  }
+//         // console.log(advice)
+//       })
+//       .catch((error) => {
+//         console.log(error)
+//       })
+//   }
 
-  render() {
+//   render() {
 
-    // const { advice } = this.state
+//     // const { advice } = this.state
 
-    return (
-      <div className="app">
-        <div className="card">
-          <h1 className="heading">{this.state.advice}</h1>
-          <button  className="button">
-            <span onClick={this.fetchAdvice}>GIVE ME ADVICE..!</span>
-          </button>
-        </div>
-      </div>
+//     return (
+//       <div className="app">
+//         <div className="card">
+//           <h1 className="heading">{this.state.advice}</h1>
+//           <button  className="button">
+//             <span onClick={this.fetchAdvice}>GIVE ME ADVICE..!</span>
+//           </button>
+//         </div>
+//       </div>
 
 
-    )
-  }
-}
+//     )
+//   }
+// }
 
-export default App
+// export default App
