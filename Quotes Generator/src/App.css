@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --path-img: attr(data-path)
+}
+
 body,
 html {
   height: 100%;
@@ -12,9 +16,8 @@ html {
 #root {
   height: 100%;
 }
-
 .app {
-  background: url('./Images/NightCityView.jpg');
+  background-image:url('./Images/P1.jpg') ;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -24,8 +27,49 @@ html {
 
 }
 
+.img1 {
+  background-image: url('./Images/P1.jpg');
+}
+
+.img2 {
+  background-image: url('./Images/P2.jpg');
+}
+
+.img3 {
+  background-image: url('./Images/P3.jpg');
+}
+
+.img4 {
+  background-image: url('./Images/P4.jpg');
+}
+
+.img5 {
+  background-image: url('./Images/P5.jpg');
+}
+
+.img6 {
+  background-image: url('./Images/P6.jpg');
+}
+
+.img7 {
+  background-image: url('./Images/P7.jpg');
+}
+
+.img8 {
+  background-image: url('./Images/P8.jpg');
+}
+
+.img9 {
+  background-image: url('./Images/P9.jpg');
+}
+
+.img10 {
+  background-image: url('./Images/P10.jpg');
+}
+
 .card {
   max-width: 500px;
+  /* max-height: 400px; */
   width: 90%;
   padding: 28px;
   border-radius: 28px;
@@ -36,8 +80,10 @@ html {
 }
 
 .heading {
-  margin-bottom: 31px;
   font-weight: 400;
+  /* max-height: 300px; */
+  /* overflow-y: scroll; */
+  margin-bottom: 31px;
   transition: height 1s ease;
 }
 
