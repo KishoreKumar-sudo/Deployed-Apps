@@ -1,47 +1,46 @@
-import React, { Component } from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import './App.css';
 
-class App extends Component {
-  state = { advice: '' }
 
-  componentDidMount() {
-    this.fetchAdvice();
-    // console.log('Component Did Mount');
-  }
+const App = () => {
+  const [advice, setAdvice] = useState([]);
+  const [randomNumber, setRandomNumber] = useState(0);
 
-  fetchAdvice = () => {
-    axios.get('https://api.adviceslip.com/advice')
+  useEffect(() => {
+    axios.get('https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json')
       .then((response) => {
-
-        const { advice } = response.data.slip
-
-        this.setState({ advice })
-
-        console.log(advice)
+        let newQuote = response.data.quotes
+        setAdvice(newQuote);
       })
       .catch((error) => {
         console.log(error)
       })
+  }, [])
+
+  const fetchAdvice = () => {
+    let randomQuote = Math.floor(Math.random() * advice.length)
+    setRandomNumber(randomQuote);
+    console.log(advice[randomNumber].quote);
   }
 
-  render() {
+  return <>
+    <div className="app">
+      <div className="card">
+        {
+          advice.length > 0 ? <>
+            <h1 className="heading">{advice[randomNumber].quote}</h1>
+            <h3 className="heading">{advice[randomNumber].author}</h3>
+          </> : null
+        }
 
-    const { advice } = this.state
 
-    return (
-      <div className="app">
-        <div className="card">
-          <h1 className="heading">{advice}</h1>
-          <button className="button">
-            <span>GIVE ME ADVICE..!</span>
-          </button>
-        </div>
+        <button className="button" onClick={fetchAdvice}>
+          <span>GIVE ME ADVICE..!</span>
+        </button>
       </div>
-
-
-    )
-  }
+    </div>
+  </>
 }
 
 export default App
