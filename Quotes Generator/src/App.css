@@ -81,8 +81,8 @@ html {
 
 .heading {
   font-weight: 400;
-  /* max-height: 300px; */
-  /* overflow-y: scroll; */
+  max-height: 400px;
+  overflow: auto;
   margin-bottom: 31px;
   transition: height 1s ease;
 }
