@@ -5,7 +5,7 @@ function App() {
   //let's return a destructured array from the useState Hook
   //for thread functionality management we're using async await
   const [movies, setMovies] = useState();
-  
+
   const getMovies = async () => {
     try {
       const response = await API.get("/API/v1/movies");
@@ -15,6 +15,10 @@ function App() {
       console.log(err);
     }
   }
+
+  useEffect(() => {
+  }, [])
+  
   return (
     <div className="App">
 
