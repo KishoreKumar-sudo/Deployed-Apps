@@ -10,7 +10,7 @@ function App() {
     try {
       const response = await API.get("/API/v1/movies");
       setMovies(response.data)
-    } 
+    }
     catch (err) {
       console.log(err);
     }
@@ -19,7 +19,7 @@ function App() {
   useEffect(() => {
     getMovies();
   }, [])
-  
+
   return (
     <div className="App">
 
