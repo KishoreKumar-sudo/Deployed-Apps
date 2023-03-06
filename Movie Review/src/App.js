@@ -5,8 +5,11 @@ function App() {
   //let's return a destructured array from the useState Hook
   //for thread functionality management we're using async await
   const [movies, setMovies] = useState();
-
+//It will store an array of movie data returned from a call to the relevant API endpoint.
+//The array is a function that can be used to change the state of the movies variable.
   const getMovies = async () => {
+//when the state of variable tracked by react through the usestate hook is changed the component is re-rendered by the react.
+//so the app component will be re-rendered when the state of the movies variable changes.
     try {
       const response = await API.get("/API/v1/movies");
       setMovies(response.data)
