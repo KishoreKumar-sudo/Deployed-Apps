@@ -12,6 +12,7 @@ function App() {
 //so the app component will be re-rendered when the state of the movies variable changes.
     try {
       const response = await API.get("/API/v1/movies");
+      console.log(response.data)
       setMovies(response.data)
     }
     catch (err) {
