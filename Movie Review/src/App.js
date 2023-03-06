@@ -1,5 +1,5 @@
 import './App.css';
-import api from './API/Axiosconfig'
+import api from './api/Axiosconfig'
 import { useState, useEffect } from 'react'
 function App() {
   //let's return a destructured array from the useState Hook
