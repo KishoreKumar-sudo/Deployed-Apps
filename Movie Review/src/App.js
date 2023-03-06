@@ -19,7 +19,7 @@ function App() {
       console.log(err);
     }
   }
-
+  //Let's implement the useeffect hook so that getmovies function is executed when the app component 1st loads.  
   useEffect(() => {
     getMovies();
   }, [])
