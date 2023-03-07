@@ -11,7 +11,7 @@ function App() {
 //when the state of variable tracked by react through the usestate hook is changed the component is re-rendered by the react.
 //so the app component will be re-rendered when the state of the movies variable changes.
     try {
-      const response = await api.get("/API/v1/movies");
+      const response = await api.get("/api/v1/movies");
       console.log(response.data)
       setMovies(response.data)
     }
