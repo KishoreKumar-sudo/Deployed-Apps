@@ -42,13 +42,13 @@ const Navbar = () => {
           </div>
         </div>
         <div className="socialIcon Flex">
-          <BsFacebook className='icon'/>
-          <AiOutlineTwitter className='icon'/>
+          <BsFacebook className='icon' />
+          <AiOutlineTwitter className='icon' />
           <AiFillYoutube className='icon' />
-          <AiFillInstagram className='icon'/>
+          <AiFillInstagram className='icon' />
         </div>
         <div className="toggleNavbar">
-          <TbGridDots className='icon'/>
+          <TbGridDots className='icon' />
         </div>
       </div>
     </div>
