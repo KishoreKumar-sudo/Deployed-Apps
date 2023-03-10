@@ -36,7 +36,12 @@ const Navbar = () => {
             <AiFillCloseCircle className='icon'/>
           </div>
         </div>
-
+        <div className="socialIconFlex">
+          <BsFacebook/>
+          <BsFacebook/>
+          <BsFacebook/>
+          <BsFacebook/>
+        </div>
       </div>
     </div>
   )
