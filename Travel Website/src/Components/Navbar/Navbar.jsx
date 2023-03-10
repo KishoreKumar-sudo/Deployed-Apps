@@ -31,8 +31,9 @@ const Navbar = () => {
               <a href="#" className="menuLinks">Pages</a>
             </li>
           </ul>
+          <div className="closeNavbar"></div>
         </div>
-        
+
       </div>
     </div>
   )
