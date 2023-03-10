@@ -1,6 +1,10 @@
 import React from 'react'
 import './Navbar.css'
 import {AiFillCloseCircle} from 'react-icons/ai' 
+import {BsFacebook} from 'react-icons/bs' 
+import {AiOutlineTwitter} from 'react-icons/ai' 
+import {AiFillYoutube} from 'react-icons/ai' 
+import {AiFillInstagram} from 'react-icons/ai' 
 const Navbar = () => {
   return (
     <div>
@@ -38,9 +42,9 @@ const Navbar = () => {
         </div>
         <div className="socialIcon Flex">
           <BsFacebook/>
-          <BsFacebook/>
-          <BsFacebook/>
-          <BsFacebook/>
+          <AiOutlineTwitter/>
+          <AiFillYoutube/>
+          <AiFillInstagram/>
         </div>
       </div>
     </div>
