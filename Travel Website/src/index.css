@@ -80,5 +80,5 @@ img{
     position: relative;
     color: var(--primaryColor);
     background-color: transparent;
-    
+    border-radius: 5px;
 }
