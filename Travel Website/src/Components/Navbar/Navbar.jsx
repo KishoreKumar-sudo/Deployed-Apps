@@ -31,7 +31,9 @@ const Navbar = () => {
               <a href="#" className="menuLinks">Pages</a>
             </li>
           </ul>
-          <div className="closeNavbar"></div>
+          <div className="closeNavbar">
+            <AiFillCloseCircle/>
+          </div>
         </div>
 
       </div>
