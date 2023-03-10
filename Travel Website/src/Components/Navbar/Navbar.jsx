@@ -5,6 +5,7 @@ import {BsFacebook} from 'react-icons/bs'
 import {AiOutlineTwitter} from 'react-icons/ai' 
 import {AiFillYoutube} from 'react-icons/ai' 
 import {AiFillInstagram} from 'react-icons/ai' 
+import {TbGridDots} from 'react-icons/tb' 
 const Navbar = () => {
   return (
     <div>
@@ -45,6 +46,9 @@ const Navbar = () => {
           <AiOutlineTwitter/>
           <AiFillYoutube/>
           <AiFillInstagram/>
+        </div>
+        <div className="toggleNavbar">
+          <TbGridDots/>
         </div>
       </div>
     </div>
