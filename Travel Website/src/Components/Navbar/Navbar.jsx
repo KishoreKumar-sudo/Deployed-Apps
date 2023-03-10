@@ -33,7 +33,7 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="closeNavbar">
-            <AiFillCloseCircle />
+            <AiFillCloseCircle className='icon'/>
           </div>
         </div>
 
