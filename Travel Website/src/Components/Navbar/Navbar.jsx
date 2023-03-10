@@ -1,5 +1,6 @@
 import React from 'react'
 import './Navbar.css'
+import {AiFillCloseCircle} from 'react-icons/ai' 
 const Navbar = () => {
   return (
     <div>
@@ -32,7 +33,7 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="closeNavbar">
-            <AiFillCloseCircle/>
+            <AiFillCloseCircle />
           </div>
         </div>
 
