@@ -1,11 +1,11 @@
 import React from 'react'
 import './Navbar.css'
-import {AiFillCloseCircle} from 'react-icons/ai' 
-import {BsFacebook} from 'react-icons/bs' 
-import {AiOutlineTwitter} from 'react-icons/ai' 
-import {AiFillYoutube} from 'react-icons/ai' 
-import {AiFillInstagram} from 'react-icons/ai' 
-import {TbGridDots} from 'react-icons/tb' 
+import { AiFillCloseCircle } from 'react-icons/ai'
+import { BsFacebook } from 'react-icons/bs'
+import { AiOutlineTwitter } from 'react-icons/ai'
+import { AiFillYoutube } from 'react-icons/ai'
+import { AiFillInstagram } from 'react-icons/ai'
+import { TbGridDots } from 'react-icons/tb'
 const Navbar = () => {
   return (
     <div>
@@ -38,17 +38,17 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="closeNavbar">
-            <AiFillCloseCircle className='icon'/>
+            <AiFillCloseCircle className='icon' />
           </div>
         </div>
         <div className="socialIcon Flex">
-          <BsFacebook/>
-          <AiOutlineTwitter/>
-          <AiFillYoutube/>
-          <AiFillInstagram/>
+          <BsFacebook className='icon'/>
+          <AiOutlineTwitter className='icon'/>
+          <AiFillYoutube className='icon' />
+          <AiFillInstagram className='icon'/>
         </div>
         <div className="toggleNavbar">
-          <TbGridDots/>
+          <TbGridDots className='icon'/>
         </div>
       </div>
     </div>
