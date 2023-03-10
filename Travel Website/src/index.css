@@ -74,4 +74,11 @@ img{
 .btn{
     border: 2px solid var(--primaryColor);
     padding: 0.5rem 1.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+    color: var(--primaryColor);
+    background-color: transparent;
+    
 }
