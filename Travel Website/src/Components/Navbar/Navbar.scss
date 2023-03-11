@@ -1,39 +1,40 @@
-:root{
-    --primaryColor:#3ab3a7;
-    --primaryHover:#0c988a;
-    --secondaryColor:#059789;
-    --secHoverColor:#253b53;
-    --greyColor:#f7f7f7;
+:root {
+    --primaryColor: #3ab3a7;
+    --primaryHover: #0c988a;
+    --secondaryColor: #059789;
+    --secHoverColor: #253b53;
+    --greyColor: #f7f7f7;
 }
 
-.header{
- position: fixed;
- display: flex;
- align-items: center;
- justify-content: center;
- width: 100%;
- padding: 2rem;
- background: var(--primaryColor);  
- z-index: 2000; 
+.header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+    background: var(--primaryColor);
+    z-index: 2000;
 
- .logoDiv{
-    .logo{
-        color: var(--greyColor);
-        font-weight: 600;
-        cursor: pointer;
+    .logoDiv {
+        .logo {
+            color: var(--greyColor);
+            font-weight: 600;
+            cursor: pointer;
+        }
     }
- }
-  @media screen and (max-width: 768px){
-    .menuDiv{
-        background-color: var(--primaryColor);
-        position: absolute;
-        height: max-content;
-    width: 80%;
-    border-radius: 10px;
-    padding: 1rem;
-    top: 200%;
-    left: 50%;
-    transform: translate(-50%);
+
+    @media screen and (max-width: 768px) {
+        .menuDiv {
+            background-color: var(--primaryColor);
+            position: absolute;
+            height: max-content;
+            width: 80%;
+            border-radius: 10px;
+            padding: 1rem;
+            top: 200%;
+            left: 50%;
+            transform: translate(-50%);
+        }
     }
-  }
 }

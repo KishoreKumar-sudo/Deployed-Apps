@@ -1,9 +1,9 @@
 :root {
-  --primaryColor:#3ab3a7;
-  --primaryHover:#0c988a;
-  --secondaryColor:#059789;
-  --secHoverColor:#253b53;
-  --greyColor:#f7f7f7;
+  --primaryColor: #3ab3a7;
+  --primaryHover: #0c988a;
+  --secondaryColor: #059789;
+  --secHoverColor: #253b53;
+  --greyColor: #f7f7f7;
 }
 
 .header {
@@ -25,13 +25,5 @@
   .header .menuDiv {
     background-color: var(--primaryColor);
     position: absolute;
-    height: -moz-max-content;
-    height: max-content;
-    width: 80%;
-    border-radius: 10px;
-    padding: 1rem;
-    top: 200%;
-    left: 50%;
-    transform: translate(-50%);
   }
 }/*# sourceMappingURL=Navbar.css.map */
