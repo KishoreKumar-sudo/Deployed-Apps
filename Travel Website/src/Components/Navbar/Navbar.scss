@@ -35,6 +35,9 @@
             top: 200%;
             left: 50%;
             transform: translate(-50%);
+            box-shadow: 0 2px 4px rgba(243, 243, 243, 0.904);
+            transition: .3s ease;
+            z-index: 3000;
         }
     }
 }
