@@ -49,4 +49,7 @@
   .header .menuDiv .menuLists .navItem {
     padding: 1rem 0;
   }
+  .header .menuDiv .menuLists .navItem .menuLink {
+    color: white;
+  }
 }/*# sourceMappingURL=Navbar.css.map */
