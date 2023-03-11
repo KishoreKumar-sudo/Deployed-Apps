@@ -49,12 +49,4 @@
   .header .menuDiv .menuLists .navItem {
     padding: 1rem 0;
   }
-  .header .menuDiv .menuLists .navItem .menuLink {
-    color: white;
-    font-size: 15px;
-    font-weight: 500;
-  }
-  .header .menuDiv .menuLists .navItem .menuLink:hover {
-    color: var(--secHoverColor);
-  }
 }/*# sourceMappingURL=Navbar.css.map */

@@ -51,14 +51,8 @@
                 .navItem {
                     padding: 1rem 0;
 
-                    .menuLink {
-                        color: white;
-                        font-size: 15px;
-                        font-weight: 500;
-                        &:hover {
-                            color: var(--secHoverColor);
-                        }
-                    }
+                .menuLink{
+                    color: white;
                 }
             }
         }
