@@ -15,4 +15,18 @@
  padding: 2rem;
  background: var(--primaryColor);  
  z-index: 2000; 
+
+ .logoDiv{
+    .logo{
+        color: var(--greyColor);
+        font-weight: 600;
+        cursor: pointer;
+    }
+ }
+  @media screen and (max-width: 768px){
+    .menuDiv{
+        background-color: var(--primaryColor);
+        position: absolute;
+    }
+  }
 }
