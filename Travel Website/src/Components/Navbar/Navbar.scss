@@ -38,6 +38,18 @@
             box-shadow: 0 2px 4px rgba(243, 243, 243, 0.904);
             transition: .3s ease;
             z-index: 3000;
+
+            .menuLists{
+                display: flex;
+                flex-direction:column ;
+                justify-content: center;
+                width: 100%;
+                align-items: center;
+                margin: auto;
+                padding: 1rem 0;
+
+    
+            }
         }
     }
 }

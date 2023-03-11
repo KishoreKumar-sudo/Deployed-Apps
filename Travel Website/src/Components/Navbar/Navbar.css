@@ -37,4 +37,13 @@
     transition: 0.3s ease;
     z-index: 3000;
   }
+  .header .menuDiv .menuLists {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    padding: 1rem 0;
+  }
 }/*# sourceMappingURL=Navbar.css.map */
