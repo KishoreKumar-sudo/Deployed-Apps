@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className="logoDiv">
           <h3 className="logo">Wonder</h3>
         </div>
-        <div className={"active"}>
+        <div className={active}>
           <ul className="menuLists">
             <li className="navItem">
               <a href="#" className="menuLinks">Home</a>
