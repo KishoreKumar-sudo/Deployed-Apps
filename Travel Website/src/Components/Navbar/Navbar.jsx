@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './Navbar.css'
 import { AiFillCloseCircle } from 'react-icons/ai'
 import { BsFacebook } from 'react-icons/bs'
@@ -7,13 +7,25 @@ import { AiFillYoutube } from 'react-icons/ai'
 import { AiFillInstagram } from 'react-icons/ai'
 import { TbGridDots } from 'react-icons/tb'
 const Navbar = () => {
+
+  //Let's display the navbar
+  const[active, setActive] = useState('menuDiv')
+
+  const showNavbar=()=>{
+    setActive('menuDiv activenavbar')
+  }
+  //Let's remove the navbar
+  const removeNavbar=()=>{
+    setActive('menuDiv closenavbar')
+  }
+
   return (
     <div>
       <div className="header flex">
         <div className="logoDiv">
           <h3 className="logo">Wonder</h3>
         </div>
-        <div className="menuDiv">
+        <div className={"active"}>
           <ul className="menuLists">
             <li className="navItem">
               <a href="#" className="menuLinks">Home</a>
@@ -37,7 +49,7 @@ const Navbar = () => {
               <a href="#" className="menuLinks">Pages</a>
             </li>
           </ul>
-          <div className="closeNavbar">
+          <div onClick={removeNavbar} className="closeNavbar">
             <AiFillCloseCircle className='icon' />
           </div>
         </div>
@@ -47,7 +59,7 @@ const Navbar = () => {
           <AiFillYoutube className='icon' />
           <AiFillInstagram className='icon' />
         </div>
-        <div className="toggleNavbar">
+        <div onClick={showNavbar} className="toggleNavbar">
           <TbGridDots className='icon' />
         </div>
       </div>

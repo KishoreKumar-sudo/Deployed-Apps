@@ -80,6 +80,6 @@
     font-size: 25px;
   }
   .header .toggleNavbar:hover .icon {
-    color: var(--primaryColor);
+    color: var(--secHoverColor);
   }
 }/*# sourceMappingURL=Navbar.css.map */
