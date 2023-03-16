@@ -28,25 +28,25 @@ const Navbar = () => {
         <div className={active}>
           <ul className="menuLists">
             <li className="navItem">
-              <a href="#" className="menuLinks">Home</a>
+              <a href="#" onClick={removeNavbar} className="menuLinks">Home</a>
             </li>
             <li className="navItem">
-              <a href="#" className="menuLinks">About Us</a>
+              <a href="#" onClick={removeNavbar} className="menuLinks">About Us</a>
             </li>
             <li className="navItem">
-              <a href="#" className="menuLinks">Our Tours</a>
+              <a href="#" onClick={removeNavbar} className="menuLinks">Our Tours</a>
             </li>
             <li className="navItem">
-              <a href="#" className="menuLinks">Gallery</a>
+              <a href="#" onClick={removeNavbar} className="menuLinks">Gallery</a>
             </li>
             <li className="navItem">
-              <a href="#" className="menuLinks">Blog</a>
+              <a href="#" onClick={removeNavbar} className="menuLinks">Blog</a>
             </li>
             <li className="navItem">
-              <a href="#" className="menuLinks">Contact Us</a>
+              <a href="#" onClick={removeNavbar} className="menuLinks">Contact Us</a>
             </li>
             <li className="navItem">
-              <a href="#" className="menuLinks">Pages</a>
+              <a href="#" onClick={removeNavbar} className="menuLinks">Pages</a>
             </li>
           </ul>
           <div onClick={removeNavbar} className="closeNavbar">
