@@ -57,4 +57,13 @@
   .header .menuDiv .menuLists .navItem .menuLink:hover {
     color: var(--secHoverColor);
   }
+  .header .menuDiv .closeNavbar {
+    color: white;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+  }
+  .header .menuDiv .closeNavbar:hover .icon {
+    color: var(--secHoverColor);
+  }
 }/*# sourceMappingURL=Navbar.css.map */
