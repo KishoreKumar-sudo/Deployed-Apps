@@ -57,10 +57,19 @@
                     font-weight: 500;
                     &:hover{
                         color: var(--secHoverColor);
-
                     }
                 }
             }
+        }
+        .closeNavbar{
+            color: white;
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+            &:hover .icon{
+                color: var(--secHoverColor);
+            }
+
         }
     }
 }
