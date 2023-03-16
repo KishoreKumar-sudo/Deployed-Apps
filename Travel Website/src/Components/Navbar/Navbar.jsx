@@ -41,7 +41,7 @@ const Navbar = () => {
             <AiFillCloseCircle className='icon' />
           </div>
         </div>
-        <div className="socialIcon Flex">
+        <div className="socialIcons Flex">
           <BsFacebook className='icon' />
           <AiOutlineTwitter className='icon' />
           <AiFillYoutube className='icon' />
