@@ -66,11 +66,19 @@
             position: absolute;
             top: 1rem;
             right: 1.5rem;
+
+            .icon{
+                font-size: 25px;
+            }
             &:hover .icon{
                 color: var(--secHoverColor);
             }
 
         }
     }
+    .activenavbar{
+        top: 6rem;
+    }
+    
 }
 }

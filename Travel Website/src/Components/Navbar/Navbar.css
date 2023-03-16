@@ -63,7 +63,13 @@
     top: 1rem;
     right: 1.5rem;
   }
+  .header .menuDiv .closeNavbar .icon {
+    font-size: 25px;
+  }
   .header .menuDiv .closeNavbar:hover .icon {
     color: var(--secHoverColor);
+  }
+  .header .activenavbar {
+    top: 6rem;
   }
 }/*# sourceMappingURL=Navbar.css.map */
