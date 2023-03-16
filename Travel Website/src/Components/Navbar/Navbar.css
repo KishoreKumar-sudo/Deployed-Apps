@@ -75,4 +75,11 @@
   .header .socialIcons {
     display: none;
   }
+  .header .toggleNavbar {
+    color: var(--greyColor);
+    font-size: 25px;
+  }
+  .header .toggleNavbar:hover .icon {
+    color: var(--primaryColor);
+  }
 }/*# sourceMappingURL=Navbar.css.map */

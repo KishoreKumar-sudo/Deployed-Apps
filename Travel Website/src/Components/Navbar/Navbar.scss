@@ -82,5 +82,14 @@
     .socialIcons{
         display: none;
     }
+    .toggleNavbar{
+        color:var(--greyColor);
+        font-size: 25px;
+        &:hover{
+            .icon{
+                color: var(--primaryColor);
+            }
+        }
+    }
 }
 }
