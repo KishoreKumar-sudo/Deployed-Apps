@@ -4,11 +4,11 @@ import './Home.css'
 const Home = () => {
   return (
     <div className='home'>
-      
+
       <div className='homeText'>
         <span className='spanText'>
           A TEAM OF PROFESSIONAL TRAVEL EXPERTS
-          </span>
+        </span>
 
         <div className="homeTitle">
           Trust <strong>Our Experience</strong>
